@@ -10,7 +10,7 @@ function generateCaptcha(array $symbols, int $length = 6): string
 {
     $result = "";
     $min = 0;
-    $max = count($symbols);
+    $max = count($symbols) - 1;
 
     for ($i = 0; $i < $length; $i++) {
         $code = random_int($min, $max);
